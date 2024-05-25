@@ -1,4 +1,4 @@
-local gpoid = {1730877806,3978370137,7465136166,11424731604}
+local gpoid = {1730877806, 3978370137, 7465136166, 11424731604}
 local fbgid = {16190471004, 12413901502, 9224601490}
 repeat wait() until game:IsLoaded()
 local logo = "rbxassetid://14098292415"
@@ -22,6 +22,7 @@ if string.find(gpoid, game.PlaceId) then
             return
         end
     end)
+    return
 end
 if string.find(fbgid, game.PlaceId) then
 spawn(function()
@@ -30,5 +31,6 @@ spawn(function()
             Noti("Fruit Battlegrounds","Kaitun",5)
         end
 end)
+    return
 end
 
