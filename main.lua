@@ -1,5 +1,3 @@
-local gpoid = {1730877806, 3978370137, 7465136166, 11424731604}
-local fbgid = {16190471004, 12413901502, 9224601490}
 repeat wait() until game:IsLoaded()
 local logo = "rbxassetid://14098292415"
 function Noti(Title,Text,Duration,Icon)
@@ -10,7 +8,7 @@ Icon = Icon or logo; -- the image if u want.
 Duration = Duration or 15; -- how long the notification should in secounds
 })end
 Noti()
-if string.find(gpoid, game.PlaceId) then
+if string.find({1730877806,3978370137,7465136166,11424731604}, game.PlaceId) then
     spawn(function()
         if getgenv().rei.Method == "Impel" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/GrandPieceOnline/Impeldown.lua'))()
@@ -22,14 +20,11 @@ if string.find(gpoid, game.PlaceId) then
             return
         end
     end)
-
-if string.find(fbgid, game.PlaceId) then
+elseif string.find({16190471004, 12413901502, 9224601490}, game.PlaceId) then
 spawn(function()
         if getgenv().rei.Method == "Kaitun" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/FruitBattlegrounds/Kaitun.lua'))()
             Noti("Fruit Battlegrounds","Kaitun",5)
         end
 end)
-    return
 end
-
