@@ -8,7 +8,7 @@ Icon = Icon or logo; -- the image if u want.
 Duration = Duration or 15; -- how long the notification should in secounds
 })end
 Noti()
-if string.find({1730877806,3978370137,7465136166,11424731604}, game.PlaceId) then
+if string.find("1730877806-3978370137-7465136166-11424731604", game.PlaceId) then
     spawn(function()
         if getgenv().rei.Method == "Impel" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/GrandPieceOnline/Impeldown.lua'))()
@@ -20,7 +20,7 @@ if string.find({1730877806,3978370137,7465136166,11424731604}, game.PlaceId) the
             return
         end
     end)
-elseif string.find({16190471004, 12413901502, 9224601490}, game.PlaceId) then
+elseif string.find("16190471004-12413901502-9224601490", game.PlaceId) then
 spawn(function()
         if getgenv().rei.Method == "Kaitun" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/FruitBattlegrounds/Kaitun.lua'))()
