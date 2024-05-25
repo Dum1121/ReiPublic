@@ -22,8 +22,7 @@ if string.find(gpoid, game.PlaceId) then
             return
         end
     end)
-    return
-end
+
 if string.find(fbgid, game.PlaceId) then
 spawn(function()
         if getgenv().rei.Method == "Kaitun" then
