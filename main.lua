@@ -27,7 +27,7 @@ spawn(function()
         if getgenv().rei.Method == "Kaitun" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/FruitBattlegrounds/Kaitun.lua'))()
             Noti("Fruit Battlegrounds","Kaitun",5)
-        elseif getgenv().rei.Method == "Mythic" or getgenv().rei.Method == "Legend" or getgenv().rei.Method == "Both" then
+        elseif getgenv().rei.Fruits == "Mythic" or getgenv().rei.Fruits == "Legend" or getgenv().rei.Fruits == "Both" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/FruitBattlegrounds/Autoroll.lua'))()
             Noti("Fruit Battlegrounds","Auto Roll",5)
         end
