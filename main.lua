@@ -5,7 +5,7 @@ local logo = "rbxassetid://14098292415"
 function Noti(Title,Text,Duration,Icon)
 game.StarterGui:SetCore("SendNotification", {
 Title = Title or "Rei Hub"; -- the title (ofc)
-Text = Text or "Welcome To Rei Hub Have Good Day With Rei Script https://discord.gg/GJNn6TTX5K"; 
+Text = Text or "Welcome To Rei Hub Have Good Day With Rei Script https://discord.gg/ReiHub"; 
 Icon = Icon or logo; -- the image if u want. 
 Duration = Duration or 15; -- how long the notification should in secounds
 })end
