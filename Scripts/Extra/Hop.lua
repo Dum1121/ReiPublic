@@ -77,7 +77,7 @@ function TPReturner()
     end
 end
 
-function Teleport()
+local function Teleport()
     while wait() do
         pcall(
             function()
@@ -89,6 +89,4 @@ function Teleport()
         )
     end
 end
-
-print("Cúc")
-Teleport()
+print("Done.")
