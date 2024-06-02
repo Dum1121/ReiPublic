@@ -90,4 +90,5 @@ function Teleport()
     end
 end
 
+print("Cúc")
 Teleport()
