@@ -89,4 +89,4 @@ local function Teleport()
         )
     end
 end
-print("Done.")
+Teleport()
