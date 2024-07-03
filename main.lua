@@ -8,7 +8,7 @@ local logo = "rbxassetid://14098292415"
 function Noti(Tit,Con,Dura,SubContent)
     Fluent:Notify({
         Title = Tit or "Rei Hub - Paid Version",
-        Content = Con or "Welcome To Rei Hub\nChecking Key...",
+        Content = Con or "Welcome To Rei Hub\nIf Script not loading then try resethwid or rejoin",
         SubContent = SubContent or nil, -- Optional
         Duration = Dura or 5 -- Set to nil to make the notification not disappear
     })
@@ -19,8 +19,15 @@ if table.find(gpoid, game.PlaceId) then
         if getgenv().rei.Method == "Main" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/GrandPieceOnline/Main.lua'))()
         elseif getgenv().rei.Method == "Impel" then
+                spawn(function()
+                    while wait() do
+                        pcall(function()
+                                    if getgenv().scriptactivated then return end
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/GrandPieceOnline/Impeldown.lua'))()
             Noti("Grand Piece Online","Impel down Auto Farm",5)
+                                end)
+                        end
+                    end)
             return
         elseif getgenv().rei.Method == "Level" then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/Dum1121/ReiPublic/main/Scripts/GrandPieceOnline/Level.lua'))()
