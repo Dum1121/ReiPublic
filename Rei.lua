@@ -4,7 +4,6 @@
     Interface Owner: _lugia.
     Bundling Tool: Latte Softworks & Kotera
 
-    .gg/w-azure
 --]]
 
 local setidentity = syn and syn.set_thread_identity or set_thread_identity or setidentity or setthreadidentity or function(...) return ... end
